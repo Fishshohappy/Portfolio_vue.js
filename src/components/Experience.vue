@@ -15,154 +15,43 @@
           <!-----------------Experience----------------- -->
           <div class="ex">
             <div class="ex_container">
-              <div style="padding: 1rem">
-                <v-card class="mx-auto" max-width="344" padding="1rem">
-                  <v-img v-bind:src="ex1" height="210px"></v-img>
-                  <v-card-title style="color: #455c71" class="text_card">
-                    Design Tapp auto by Figma</v-card-title
-                  >
-                  <v-card-actions>
-                    <v-btn color="yellow accent-4" text> Explore </v-btn>
-                    <!-- <v-spacer></v-spacer> -->
-                    <v-btn
-                      icon
-                      @click="show = !show"
-                      style="overflow-y: hidden; overflow-x: hidden"
-                    >
-                      <v-icon style="overflow-y: hidden; overflow-x: hidden">{{
-                        show ? "mdi-chevron-up" : "mdi-chevron-down"
-                      }}</v-icon>
-                    </v-btn>
-                  </v-card-actions>
-                  <v-expand-transition>
-                    <div v-show="show">
-                      <v-divider></v-divider>
-                      <v-card-text>
-                        Use Figma tool to design the store.
-                        <a
-                          href="https://www.figma.com/file/gDyqRSZtENlJru6np2vyLQ/TAPP?type=design&node-id=9%3A208&t=hWDRdOjYs1BWjj1j-1"
-                          target="_blank"
-                          style="text-decoration: none; color: white"
-                          ><v-icon style="overflow-y: hidden; width: 100%"
-                            >mdi-link</v-icon
-                          ></a
-                        >
-                      </v-card-text>
-                    </div>
-                  </v-expand-transition>
-                </v-card>
-              </div>
-
-              <div style="padding: 1rem">
+              <div style="padding: 1rem" v-for="(e, i) in exp" :key="i">
                 <v-card class="mx-auto" max-width="344">
-                  <v-img v-bind:src="ex2" height="210px"></v-img>
-                  <v-card-title style="color: #455c71" class="text_card">
-                    Design Safe Wash store</v-card-title
-                  >
-                  <v-card-actions>
-                    <v-btn color="yellow accent-4" text> Explore </v-btn>
-                    <!-- <v-spacer></v-spacer> -->
-                    <v-btn
-                      icon
-                      @click="show_2 = !show_2"
-                      style="overflow-y: hidden; overflow-x: hidden"
-                    >
-                      <v-icon style="overflow-y: hidden; overflow-x: hidden">{{
-                        show_2 ? "mdi-chevron-up" : "mdi-chevron-down"
-                      }}</v-icon>
-                    </v-btn>
-                  </v-card-actions>
-                  <v-expand-transition>
-                    <div v-show="show_2">
-                      <v-divider></v-divider>
-                      <v-card-text>
-                        Use HTML5, CSS and Javascrips to design the Save Wash
-                        store.
-                        <a
-                          href="https://save-wash-dusky.vercel.app/"
-                          target="_blank"
-                          style="text-decoration: none; color: white"
-                          ><v-icon style="overflow-y: hidden; width: 100%"
-                            >mdi-link</v-icon
-                          ></a
-                        >
-                      </v-card-text>
-                    </div>
-                  </v-expand-transition>
-                </v-card>
-              </div>
-
-              <div style="padding: 1rem">
-                <v-card class="mx-auto" max-width="344">
-                  <v-img v-bind:src="ex3" height="210px"></v-img>
-                  <v-card-title style="color: #455c71" class="text_card">
-                    SQL creat restaurant store
+                  <v-img :src="e.img" height="210px"></v-img>
+                  <v-card-title class="text_card" style="color: #455c71">
+                    {{ e.title }}
                   </v-card-title>
                   <v-card-actions>
-                    <v-btn color="yellow accent-4" text> Explore </v-btn>
+                    <!-- <v-btn color="yellow accent-4" text>  </v-btn> -->
                     <!-- <v-spacer></v-spacer> -->
                     <v-btn
-                      icon
-                      @click="show_3 = !show_3"
+                      text
+                      @click="exp[i].show = !e.show"
                       style="overflow-y: hidden; overflow-x: hidden"
                     >
-                      <v-icon style="overflow-y: hidden; overflow-x: hidden">{{
-                        show_3 ? "mdi-chevron-up" : "mdi-chevron-down"
-                      }}</v-icon>
+                      Explore
+                      <v-icon
+                        right
+                        style="overflow-y: hidden; overflow-x: hidden"
+                      >
+                        {{ e.show ? "mdi-chevron-up" : "mdi-chevron-down" }}
+                      </v-icon>
                     </v-btn>
                   </v-card-actions>
                   <v-expand-transition>
-                    <div v-show="show_3">
+                    <div v-show="e.show">
                       <v-divider></v-divider>
                       <v-card-text>
-                        Use SQL to design data restaurant store.
+                        {{ e.text }}
                         <a
-                          href="https://replit.com/@AthitiyaPanlaba/BootcampHomeworkSQL?v=1"
+                          :href="e.link"
                           target="_blank"
                           style="text-decoration: none; color: white"
-                          ><v-icon style="overflow-y: hidden; width: 100%"
-                            >mdi-link</v-icon
-                          ></a
                         >
-                      </v-card-text>
-                    </div>
-                  </v-expand-transition>
-                </v-card>
-              </div>
-
-              <div style="padding: 1rem">
-                <v-card class="mx-auto" max-width="344">
-                  <v-img v-bind:src="ex4" height="210px"></v-img>
-                  <v-card-title style="color: #455c71" class="text_card">
-                    Design my portfolio</v-card-title
-                  >
-                  <v-card-actions>
-                    <v-btn color="yellow accent-4" text> Explore </v-btn>
-                    <!-- <v-spacer></v-spacer> -->
-                    <v-btn
-                      icon
-                      @click="show_4 = !show_4"
-                      style="overflow-y: hidden; overflow-x: hidden"
-                    >
-                      <v-icon style="overflow-y: hidden; overflow-x: hidden">{{
-                        show_4 ? "mdi-chevron-up" : "mdi-chevron-down"
-                      }}</v-icon>
-                    </v-btn>
-                  </v-card-actions>
-                  <v-expand-transition>
-                    <div v-show="show_4">
-                      <v-divider></v-divider>
-                      <v-card-text>
-                        Use HTML5, CSS and Javascrips to design Athitiya's
-                        Portfolio.
-                        <a
-                          href="https://athitiya-port.vercel.app/"
-                          target="_blank"
-                          style="text-decoration: none; color: white"
-                          ><v-icon style="overflow-y: hidden; width: 100%"
-                            >mdi-link</v-icon
-                          ></a
-                        >
+                          <v-icon style="overflow-y: hidden; width: 100%">
+                            mdi-link
+                          </v-icon>
+                        </a>
                       </v-card-text>
                     </div>
                   </v-expand-transition>
@@ -170,6 +59,7 @@
               </div>
             </div>
           </div>
+
           <div style="width: max-content; height: 5rem"></div>
           <div>
             <v-footer
@@ -178,36 +68,27 @@
               style="display: flex; justify-content: center"
             >
               <div style="margin: 20px">
-                <a
+                <!-- <a
                   href="https://github.com/Fishshohappy/athitiya_port"
                   target="_blank"
                   style="text-decoration: none; color: white"
-                  ><v-icon style="overflow-y: hidden">mdi-github </v-icon></a
-                >
+                  ></a
+                > -->
+                <v-icon style="overflow-y: hidden">mdi-github </v-icon>
               </div>
               <div style="margin: 20px">
-                <a
-                  href="https://www.Email.com"
-                  target="_blank"
-                  style="text-decoration: none; color: white"
-                  ><v-icon style="overflow-y: hidden">mdi-email</v-icon></a
-                >
+                <v-icon style="overflow-y: hidden">mdi-email</v-icon>
               </div>
               <div style="margin: 20px">
-                <a
+                <!-- <a
                   href="https://www.linkedin.com/in/athitiya-panlabal-7803ab263/"
                   target="_blank"
                   style="text-decoration: none; color: white"
-                  ><v-icon style="overflow-y: hidden">mdi-linkedin</v-icon></a
-                >
+                  ></a> -->
+                <v-icon style="overflow-y: hidden">mdi-linkedin</v-icon>
               </div>
               <div style="margin: 20px">
-                <a
-                  href="https://www.Email.com"
-                  target="_blank"
-                  style="text-decoration: none; color: white"
-                  ><v-icon style="overflow-y: hidden">mdi-phone</v-icon></a
-                >
+                <v-icon style="overflow-y: hidden">mdi-phone </v-icon>
               </div>
             </v-footer>
           </div>
@@ -309,6 +190,36 @@ export default {
     show_3: false,
     ex4: require("../assets/html_port.png"),
     show_4: false,
+    exp: [
+      {
+        title: "Design my portfolio",
+        show: false,
+        img: require("../assets/html_port.png"),
+        text: "Use HTML5, CSS and Javascrips to design Athitiya's Portfolio.",
+        link: "https://athitiya-port.vercel.app/",
+      },
+      {
+        title: "SQL creat restaurant store",
+        show: false,
+        img: require("../assets/image/sql.png"),
+        text: "Use SQL to design data restaurant store.",
+        link: "https://replit.com/@AthitiyaPanlaba/BootcampHomeworkSQL?v=1",
+      },
+      {
+        title: "Design Safe Wash store",
+        show: false,
+        img: require("../assets/save_wash.png"),
+        text: "Use HTML5, CSS and Javascrips to design the Save Wash store.",
+        link: "https://save-wash-dusky.vercel.app/",
+      },
+      {
+        title: "Design Tapp auto by Figma",
+        show: false,
+        img: require("../assets/image/figma_tapp.png"),
+        text: "Use Figma tool to design the store.",
+        link: "https://www.figma.com/file/gDyqRSZtENlJru6np2vyLQ/TAPP?type=design&node-id=9%3A208&t=hWDRdOjYs1BWjj1j-1",
+      },
+    ],
   }),
 };
 </script>

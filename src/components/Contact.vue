@@ -43,7 +43,7 @@
                 />
               </div>
 
-              <p>You can call this number <br />'089-080-2004'</p>
+              <p>call at number <br />089-080-2004</p>
             </div>
 
             <div class="Sub_contain">
@@ -60,7 +60,7 @@
               </div>
 
               <p>
-                If you can not contact me <br />please sent to my email <br />
+                If you can not contact me <br />please sent to email <br />
                 'Athitiya.pla@gmail.com'
               </p>
             </div>
@@ -69,7 +69,7 @@
               <h4
                 style="font-size: 18px; display: flex; justify-content: center"
               >
-                By linkedin
+                By linkedin & Github
               </h4>
               <div style="display: flex; justify-content: center">
                 <img
@@ -79,7 +79,7 @@
               </div>
 
               <p>
-                And the last contact is linkedin,<br />
+                And the last contact is Linkedin and Github,<br />
                 you can click at icon.
                 <a
                   href="https://www.linkedin.com/in/athitiya-panlabal-7803ab263/"
@@ -87,6 +87,14 @@
                   style="text-decoration: none; color: white"
                   ><v-icon style="overflow-y: hidden; width: 100%"
                     >mdi-linkedin</v-icon
+                  ></a
+                >
+                <a
+                  href="https://github.com/Fishshohappy/athitiya_port"
+                  target="_blank"
+                  style="text-decoration: none; color: white"
+                  ><v-icon style="overflow-y: hidden; width: 100%"
+                    >mdi-github</v-icon
                   ></a
                 >
               </p>

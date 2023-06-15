@@ -244,6 +244,7 @@
               </div>
             </div>
           </div>
+
           <div style="width: max-content; height: 5rem"></div>
           <div>
             <v-footer
@@ -252,36 +253,27 @@
               style="display: flex; justify-content: center"
             >
               <div style="margin: 20px">
-                <a
+                <!-- <a
                   href="https://github.com/Fishshohappy/athitiya_port"
                   target="_blank"
                   style="text-decoration: none; color: white"
-                  ><v-icon style="overflow-y: hidden">mdi-github </v-icon></a
-                >
+                  ></a
+                > -->
+                <v-icon style="overflow-y: hidden">mdi-github </v-icon>
               </div>
               <div style="margin: 20px">
-                <a
-                  href="https://www.Email.com"
-                  target="_blank"
-                  style="text-decoration: none; color: white"
-                  ><v-icon style="overflow-y: hidden">mdi-email</v-icon></a
-                >
+                <v-icon style="overflow-y: hidden">mdi-email</v-icon>
               </div>
               <div style="margin: 20px">
-                <a
+                <!-- <a
                   href="https://www.linkedin.com/in/athitiya-panlabal-7803ab263/"
                   target="_blank"
                   style="text-decoration: none; color: white"
-                  ><v-icon style="overflow-y: hidden">mdi-linkedin</v-icon></a
-                >
+                  ></a> -->
+                <v-icon style="overflow-y: hidden">mdi-linkedin</v-icon>
               </div>
               <div style="margin: 20px">
-                <a
-                  href="https://www.Email.com"
-                  target="_blank"
-                  style="text-decoration: none; color: white"
-                  ><v-icon style="overflow-y: hidden">mdi-phone</v-icon></a
-                >
+                <v-icon style="overflow-y: hidden">mdi-phone </v-icon>
               </div>
             </v-footer>
           </div>
