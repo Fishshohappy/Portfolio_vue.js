@@ -219,6 +219,13 @@ export default {
         text: "Use Figma tool to design the store.",
         link: "https://www.figma.com/file/gDyqRSZtENlJru6np2vyLQ/TAPP?type=design&node-id=9%3A208&t=hWDRdOjYs1BWjj1j-1",
       },
+      {
+        title: "Design Save & Wash by Figma",
+        show: false,
+        img: require("../assets/Figma_save_wash.png"),
+        text: "Use Figma tool to design the Save & Wasg store.",
+        link: "https://www.figma.com/file/JugGdxuYqx8u6HjlO3no0F/Cleaning-store?type=design&node-id=1%3A2&t=1hc0YAKZMr1Xb97l-1",
+      },
     ],
   }),
 };
