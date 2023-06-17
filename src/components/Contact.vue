@@ -31,7 +31,7 @@
                 />
               </div>
 
-              <p>call at number <br />089-080-2004</p>
+              <p>Call at number <br />089-080-2004</p>
             </div>
 
             <div class="Sub_contain">
@@ -48,8 +48,8 @@
               </div>
 
               <p>
-                If you can not contact me <br />please sent to email <br />
-                'Athitiya.pla@gmail.com'
+                If you can't contact me <br />please sent an email to<br />
+                Athitiya.pla@gmail.com
               </p>
             </div>
 
@@ -67,8 +67,8 @@
               </div>
 
               <p>
-                And the last contact is Linkedin and Github,<br />
-                you can click at icon.
+                And the last contacts are LinkedIn and Github,<br />
+                you can click on the icons.
                 <a
                   href="https://www.linkedin.com/in/athitiya-panlabal-7803ab263/"
                   target="_blank"
@@ -243,6 +243,7 @@ export default {
     justify-content: center;
     width: 100vw;
     height: 100%;
+    overflow-y: hidden;
   }
   .Sub_contain {
     display: block;

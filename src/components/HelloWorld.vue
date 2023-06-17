@@ -65,7 +65,7 @@
                 Certifications
               </h4>
               <li>Google Data analysis</li>
-              <li>Phototyping by Chula MOCC</li>
+              <li>Phototyping by Chula MOOC</li>
             </div>
 
             <div class="textbox">
@@ -78,7 +78,7 @@
             </div>
             <div class="textbox">
               <h4 style="text-align: center; margin-bottom: 10px">Course</h4>
-              <li>Phototyping by Chula MOCC</li>
+              <li>Phototyping by Chula MOOC</li>
               <li>Data analytics by Google cousera</li>
               <li>Data analysis by Rockie Data</li>
             </div>
@@ -270,31 +270,31 @@ export default {
         link: "https://athitiya-port.vercel.app/",
       },
       {
-        title: "SQL creat restaurant store",
+        title: "Practice using SQL from the Data Rockie course.",
         show: false,
         img: require("../assets/image/sql.png"),
-        text: "Use SQL to design data restaurant store.",
+        text: "Use SQL to design the restaurant.",
         link: "https://replit.com/@AthitiyaPanlaba/BootcampHomeworkSQL?v=1",
       },
       {
-        title: "Design Safe Wash store",
+        title: "Design Safe Wash",
         show: false,
         img: require("../assets/save_wash.png"),
-        text: "Use HTML5, CSS and Javascrips to design the Save Wash store.",
+        text: "Use HTML5, CSS and Javascrips to design the Save Wash.",
         link: "https://save-wash-dusky.vercel.app/",
       },
       {
         title: "Design Tapp auto by Figma",
         show: false,
         img: require("../assets/image/figma_tapp.png"),
-        text: "Use Figma tool to design the store.",
+        text: "Use Figma tool to design the TAPP auto store.",
         link: "https://www.figma.com/file/gDyqRSZtENlJru6np2vyLQ/TAPP?type=design&node-id=9%3A208&t=hWDRdOjYs1BWjj1j-1",
       },
       {
         title: "Design Save & Wash by Figma",
         show: false,
         img: require("../assets/Figma_save_wash.png"),
-        text: "Use Figma tool to design the Save & Wasg store.",
+        text: "Use Figma tool to design the Save & Wash.",
         link: "https://www.figma.com/file/JugGdxuYqx8u6HjlO3no0F/Cleaning-store?type=design&node-id=1%3A2&t=1hc0YAKZMr1Xb97l-1",
       },
     ],
@@ -302,4 +302,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.v-icon notranslate mdi mdi-menu theme--dark {
+  overflow-y: hidden;
+}
+</style>

@@ -16,9 +16,9 @@
             <img class="img" v-bind:src="Phototyping" />
             <h3 class="h3-text">Phototyping by Chula MOCC</h3>
             <p class="p-text">
-              I have taken a course about designing on application<br />
-              and website by use Figma program. when I passed the exam <br />i
-              receive certification about Phototyping.
+              I have taken a course about designing an application.<br />
+              and website by using the Figma program. when I passed the exam.<br />
+              I received certification about phototyping.
             </p>
           </div>
 
@@ -27,7 +27,7 @@
             <h3 class="h3-text">Data analytics by Google cousera</h3>
             <p class="p-text">
               I have taken a course about Data Analytics.<br />
-              The course about how to manage, filter data by SQL and R language
+              The course about how to manage, filter data by SQL and R.
             </p>
           </div>
 

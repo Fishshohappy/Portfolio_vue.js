@@ -199,10 +199,10 @@ export default {
         link: "https://athitiya-port.vercel.app/",
       },
       {
-        title: "SQL creat restaurant store",
+        title: "Practice using SQL from the Data Rockie course.",
         show: false,
         img: require("../assets/image/sql.png"),
-        text: "Use SQL to design data restaurant store.",
+        text: "Use SQL to design the restaurant.",
         link: "https://replit.com/@AthitiyaPanlaba/BootcampHomeworkSQL?v=1",
       },
       {

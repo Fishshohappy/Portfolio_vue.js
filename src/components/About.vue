@@ -22,20 +22,19 @@
             <div class="contain-text">
               <p>
                 <br />
-                " My name is Athitiya Panlabal [Nickname : Pla] <br />
-                This year I will graduate from Chulalongkorn University with a
+                My name is Athitiya Panlabal [nickname : Pla] <br />
+                This year, I will graduate from Chulalongkorn University with a
                 Bachelor of Chemistry Science GPAX 2.85
                 <br />
                 <br />
-                You will notice from my resume that I have worked and collecting
-                experience in Functional programming languagesa,web development
-                and Figma to implement application UI that would be relevant for
-                the position you advertise.
+                You will notice from my resume that I try to practice using
+                functional programming languages, web development, and Figma to
+                implement application UI.
                 <br />
                 <br />
                 I believe I would fit the style, approach, and culture of your
                 company and I hope I can discuss this matter further with you in
-                an interview in the near future. "
+                an interview in the near future.
                 <br />
                 <br />
               </p>
