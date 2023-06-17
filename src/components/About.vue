@@ -16,10 +16,7 @@
 
           <div class="container">
             <div class="img-me">
-              <img
-                style="width: 500px; height: fit-content; border-radius: 16px"
-                v-bind:src="me"
-              />
+              <img style="width: 500px; border-radius: 16px" v-bind:src="me" />
             </div>
 
             <div class="contain-text">
