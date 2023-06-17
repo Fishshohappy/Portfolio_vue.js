@@ -12,27 +12,15 @@
             <h1 style="border-bottom: 8px solid #e7ca47">Contact</h1>
           </div>
 
-          <!-- <div
-            style="
-              padding: 5px;
-              height: 50%;
-              position: absolute;
-              top: 500px;
-              left: 70px;
-
-            "
-          >
-            <h2 style="text-align: ce; font-size: 70px; color: white">
-              Hi
-              <br />
-              I'm Pla
-              <br />
-            </h2>
-          </div> -->
           <div class="container_contact">
             <div class="Sub_contain">
               <h4
-                style="font-size: 18px; display: flex; justify-content: center"
+                style="
+                  font-size: 18px;
+                  display: flex;
+                  justify-content: center;
+                  overflow-y: hidden;
+                "
               >
                 By phone
               </h4>
@@ -254,7 +242,7 @@ export default {
     display: block;
     justify-content: center;
     width: 100vw;
-    height: 700px;
+    height: 100%;
   }
   .Sub_contain {
     display: block;
