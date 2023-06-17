@@ -45,7 +45,7 @@
                   overflow-y: hidden;
                   font-weight: 100px;
                 "
-                href="https://chula-my.sharepoint.com/:b:/g/personal/6234111623_student_chula_ac_th/EWHVBuZpgdVPoedvcBoL4VIBjDw2g2Vk2krrOrcf3nueNQ?e=mPKr8D"
+                href="https://chula-my.sharepoint.com/:b:/g/personal/6234111623_student_chula_ac_th/ESRogI8pSlNDkrrJcNlVFgQBu-C3C8ZWpFFBJXwBNSyG8Q?e=czUtvy"
                 target="_blank"
                 >CLICK FOR MY RESUME</a
               >
@@ -73,13 +73,13 @@
               <li>HTML [Good]</li>
               <li>CSS [Good]</li>
               <li>SQL [Basic]</li>
-              <li>R [Basic]</li>
               <li>Javascrips [Basic]</li>
               <li>Vue.js [Basic]</li>
             </div>
             <div class="textbox">
               <h4 style="text-align: center; margin-bottom: 10px">Course</h4>
-              <li>Python at Chula</li>
+              <li>Phototyping by Chula MOCC</li>
+              <li>Data analytics by Google cousera</li>
               <li>Data analysis by Rockie Data</li>
             </div>
           </div>
