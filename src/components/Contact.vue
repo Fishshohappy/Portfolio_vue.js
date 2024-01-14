@@ -1,247 +1,114 @@
 <template>
-  <v-app>
-    <div>
-      <v-card class="mx-auto overflow-hidden">
-        <v-app-bar color="blue-grey darken-4" dark>
-          <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-          <v-toolbar-title></v-toolbar-title>
-        </v-app-bar>
-        <!-- -----------------Intro----------------- -->
-        <div class="Intro">
-          <div style="display: flex; justify-content: center">
-            <h1 style="border-bottom: 8px solid #e7ca47">Contact</h1>
-          </div>
-
-          <div class="container_contact">
-            <div class="Sub_contain">
-              <h4
-                style="
-                  font-size: 18px;
-                  display: flex;
-                  justify-content: center;
-                  overflow-y: hidden;
-                "
-              >
-                By phone
-              </h4>
-              <div style="display: flex; justify-content: center">
-                <img
-                  v-bind:src="call"
-                  style="width: 100px; height: 100px padding: 10px"
-                />
-              </div>
-
-              <p>Call at number <br />089-080-2004</p>
-            </div>
-
-            <div class="Sub_contain">
-              <h4
-                style="font-size: 18px; display: flex; justify-content: center"
-              >
-                By email
-              </h4>
-              <div style="display: flex; justify-content: center">
-                <img
-                  v-bind:src="mail"
-                  style="width: 100px; height: 100px; padding: 10px"
-                />
-              </div>
-
-              <p>
-                If you can't contact me <br />please sent an email to<br />
-                Athitiya.pla@gmail.com
-              </p>
-            </div>
-
-            <div class="Sub_contain">
-              <h4
-                style="font-size: 18px; display: flex; justify-content: center"
-              >
-                By linkedin & Github
-              </h4>
-              <div style="display: flex; justify-content: center">
-                <img
-                  v-bind:src="linkedin"
-                  style="width: 100px; height: 100px; padding: 10px"
-                />
-              </div>
-
-              <p>
-                And the last contacts are LinkedIn and Github,<br />
-                you can click on the icons.
-                <a
-                  href="https://www.linkedin.com/in/athitiya-panlabal-7803ab263/"
-                  target="_blank"
-                  style="text-decoration: none; color: white"
-                  ><v-icon style="overflow-y: hidden; width: 100%"
-                    >mdi-linkedin</v-icon
-                  ></a
-                >
-                <a
-                  href="https://github.com/Fishshohappy/athitiya_port"
-                  target="_blank"
-                  style="text-decoration: none; color: white"
-                  ><v-icon style="overflow-y: hidden; width: 100%"
-                    >mdi-github</v-icon
-                  ></a
-                >
-              </p>
-            </div>
-          </div>
-
-          <!-- <div style="width: max-content; height: 5rem"></div>
-          <div>
-            <v-footer
-              color="blue-grey darken-4"
-              dark
-              style="display: flex; justify-content: center"
-            >
-              <div style="margin: 20px">
-                <a
-                  href="https://github.com/Fishshohappy/athitiya_port"
-                  target="_blank"
-                  style="text-decoration: none; color: white"
-                  ><v-icon style="overflow-y: hidden">mdi-github </v-icon></a
-                >
-              </div>
-              <div style="margin: 20px">
-                <a
-                  href="https://www.Email.com"
-                  target="_blank"
-                  style="text-decoration: none; color: white"
-                  ><v-icon style="overflow-y: hidden">mdi-email</v-icon></a
-                >
-              </div>
-              <div style="margin: 20px">
-                <a
-                  href="https://www.linkedin.com/in/athitiya-panlabal-7803ab263/"
-                  target="_blank"
-                  style="text-decoration: none; color: white"
-                  ><v-icon style="overflow-y: hidden">mdi-linkedin</v-icon></a
-                >
-              </div>
-              <div style="margin: 20px">
-                <a
-                  href="https://www.Email.com"
-                  target="_blank"
-                  style="text-decoration: none; color: white"
-                  ><v-icon style="overflow-y: hidden">mdi-phone</v-icon></a
-                >
-              </div>
-            </v-footer>
-          </div> -->
-        </div>
-
-        <v-navigation-drawer v-model="drawer" absolute temporary>
-          <v-list nav dense>
-            <v-list-item-group
-              v-model="group"
-              active-class="blue-grey darken-4--text text--accent-4"
-            >
-              <v-list-item>
-                <v-list-item-icon>
-                  <v-icon style="overflow-y: hidden">mdi-home</v-icon>
-                </v-list-item-icon>
-                <v-list-item-title>
-                  <router-link
-                    to="/"
-                    style="text-decoration: none; color: #212121"
-                    >Home</router-link
-                  ></v-list-item-title
-                >
-              </v-list-item>
-
-              <v-list-item>
-                <v-list-item-icon>
-                  <v-icon style="overflow-y: hidden">mdi-account</v-icon>
-                </v-list-item-icon>
-
-                <v-list-item-title
-                  ><router-link
-                    to="/about"
-                    style="text-decoration: none; color: #212121"
-                    >About me</router-link
-                  ></v-list-item-title
-                >
-              </v-list-item>
-              <v-list-item>
-                <v-list-item-icon>
-                  <v-icon style="overflow-y: hidden">mdi-school</v-icon>
-                </v-list-item-icon>
-                <v-list-item-title>
-                  <router-link
-                    to="/Education"
-                    style="text-decoration: none; color: #212121"
-                    >Course</router-link
-                  >
-                </v-list-item-title>
-              </v-list-item>
-
-              <v-list-item>
-                <v-list-item-icon>
-                  <v-icon style="overflow-y: hidden">mdi-briefcase</v-icon>
-                </v-list-item-icon>
-                <v-list-item-title>
-                  <router-link
-                    to="/Experience"
-                    style="text-decoration: none; color: #212121"
-                    >Experience</router-link
-                  >
-                </v-list-item-title>
-              </v-list-item>
-
-              <v-list-item>
-                <v-list-item-icon>
-                  <v-icon style="overflow-y: hidden">mdi-phone</v-icon>
-                </v-list-item-icon>
-                <v-list-item-title>
-                  <router-link
-                    to="/Contact"
-                    style="text-decoration: none; color: #212121"
-                    >Contact</router-link
-                  >
-                </v-list-item-title>
-              </v-list-item>
-            </v-list-item-group>
-          </v-list>
-        </v-navigation-drawer>
-      </v-card>
+  <div class="Intro">
+    <div style="display: flex; justify-content: center; padding: 2rem">
+      <h1 style="border-bottom: 8px solid #e7ca47">Contact</h1>
     </div>
-  </v-app>
+    <v-row>
+      <v-col cols="12" md="3" style="padding: 1rem">
+        <v-card height="220">
+          <v-card-title class="d-flex justify-center py-6">
+            By phone
+          </v-card-title>
+          <v-card-text class="text-center">
+            <div class="d-flex justify-center py-4">
+              <v-img :src="call" max-width="60px"></v-img>
+            </div>
+
+            Call at number <br />
+            089-080-2004
+          </v-card-text>
+        </v-card>
+      </v-col>
+
+      <v-col cols="12" md="3" style="padding: 1rem">
+        <v-card height="220">
+          <v-card-title class="d-flex justify-center py-6">
+            By Email
+          </v-card-title>
+          <v-card-text class="text-center">
+            <div class="d-flex justify-center pb-4">
+              <v-img :src="mail" max-width="60px"></v-img>
+            </div>
+            Please sent an email to<br />
+            Athitiya.pla@gmail.com
+          </v-card-text>
+        </v-card>
+      </v-col>
+
+      <v-col cols="12" md="3" style="padding: 1rem">
+        <v-card height="220">
+          <v-card-title class="d-flex justify-center py-6">
+            By linkedin
+          </v-card-title>
+          <v-card-text class="text-center">
+            <div class="d-flex justify-center pb-4">
+              <v-img :src="linkedin" max-width="60px"></v-img>
+            </div>
+
+            Contacts me by <v-icon>mdi-ray-end</v-icon><br />
+            <a
+              href="https://www.linkedin.com/in/athitiya-panlabal-7803ab263/"
+              target="_blank"
+              style="text-decoration: none; color: rgb(46, 102, 161)"
+            >
+              LinkedIn
+            </a>
+          </v-card-text>
+        </v-card>
+      </v-col>
+
+      <v-col cols="12" md="3" style="padding: 1rem">
+        <v-card height="220">
+          <v-card-title class="d-flex justify-center py-6">
+            By Github
+          </v-card-title>
+          <v-card-text class="text-center">
+            <div class="d-flex justify-center pb-4">
+              <v-img :src="Github" max-width="60px"></v-img>
+            </div>
+            Contacts me by <v-icon>mdi-ray-end</v-icon><br />
+            <a
+              href="https://github.com/Fishshohappy"
+              target="_blank"
+              style="text-decoration: none; color: rgb(46, 102, 161)"
+            >
+              Github
+            </a>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
 export default {
   name: "Contact-page",
   data: () => ({
-    drawer: false,
-    group: null,
     me: require("../assets/me.jpg"),
-    call: require("../assets/phone.svg"),
-    mail: require("../assets/mail.svg"),
-    linkedin: require("../assets/linkedin.svg"),
+    call: require("../assets/phone.png"),
+    mail: require("../assets/email.png"),
+    linkedin: require("../assets/linkicon.png"),
+    Github: require("../assets/Github.png"),
   }),
 };
 </script>
 
 <style lang="css" scoped>
-.container_contact {
+/* .container_contact {
   background-color: #f5f5f5;
-  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 .Sub_contain {
-  padding: 25px;
   margin: 35px;
 }
 @media (max-width: 600px) {
   .container_contact {
     display: block;
     justify-content: center;
-    width: 100vw;
     height: 100%;
     overflow-y: hidden;
   }
@@ -253,5 +120,5 @@ export default {
     margin: 40px;
     background-color: white;
   }
-}
+} */
 </style>
