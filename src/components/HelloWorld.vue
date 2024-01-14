@@ -182,7 +182,7 @@ export default {
         title: "Design The SAKSAT Hospital by Figma",
         show: false,
         img: require("../assets/image/MacBook_bg1.png"),
-        text: "Use Figma tool to design the hospital of animals.",
+        text: "Use Figma tool to design the animals hospital.",
         link: "https://www.figma.com/proto/JugGdxuYqx8u6HjlO3no0F/The-RAKSAT-Hospital?page-id=1%3A2&type=design&node-id=221-38269&viewport=-829%2C208%2C0.21&t=9BitZvuEWObimYaN-1&scaling=min-zoom&mode=design",
       },
       {
